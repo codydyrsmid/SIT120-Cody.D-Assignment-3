@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    </head>
+    <style>
+        /* Style used to change colour of the background of the application */
+      body {
+  background-color: black;
+  
+}
+/* This is used for the Navigation bar */
+li {
+    background-color: rgb(0, 0, 0);
+  }
+    /* Navigation bar */
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+}
+  /* Navigation bar */
+
+h1 {
+    text-align: center;
+}
+  /* Navigation bar */
+li {
+  float: left;
+  text-align: center;
+}
+  /* Navigation bar */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+    </style>
+    <body>
+      <ul>
+        <li><a class="active" href="#Homepage.html">Home</a></li>
+        <li><a href="#Car Discovery.html">Car discovery</a></li>
+        <li><a href="#Forum.html">Forum</a></li>
+        <li><a href="#FAQ.html">FAQ</a></li>
+        <li><a href="#Imports.html">Imports</a></li>
+        <li><a href="#Profile.html">Profile</a></li>
+
+      </ul>
+<br><br/>
+      <h1 style="color:white;">FAQ page</h1>
+        <div id="app">
+            <div class="row">
+                
+                <p style="color:white;">FAQs </p>
+                <p style="color:white;">When will the next events be held?</p>
+                <p style="color:white;">All events are updated within the homepage?</p>
+            <br>
+                <p style="color:white;">Where are you located?</p>
+                <p style="color:white;">Australia</p>
+                <br>
+                <p style="color:white;">What is the car discovery page?</p>
+                <p style="color:white;">Car discovery page is a page that allows you to search for your ideal car </p>
+                <br>
+                <p style="color:white;">How do i contact you?</p>
+                <p style="color:white;">You can contact us through the contact us page within the profile  </p>
+                <br>
+                <p style="color:white;">How do i save a search?</p>
+                <p style="color:white;">You can save a car search by following the car by clicking the star button once on the car, this adds it to your homepage </p>
+                <br>
+                
+                
+                </div>    
+
+          
+
+        </div>
+        <div class ="image">
+          <img src="jdmpic4.jpg" >
+      </div>
+    </body>
+</html>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            name: 'cody',
+        },
+    });
+</script>

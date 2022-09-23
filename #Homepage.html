@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ /* Style used to change colour of the background of the application */
+ body {
+  background-color: black;
+}
+/* This is used for the Navigation bar */
+  li {
+    background-color: rgb(0, 0, 0);
+  }
+  /* Navigation bar */
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Navigation bar */
+li {
+  float: left;
+}
+/* Navigation bar */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Used to change the opacity of the image*/
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+/* Used to edit thhe layout of the application */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  
+}
+
+/* Allows for 2 collumns to be used in the application */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+/* Slider bar for the upcoming events */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+/* Changes the opacity onces hovering over the bar */
+.slider:hover {
+  opacity: 1;
+}
+</style>
+  <title>JapHub</title>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#Homepage.html">Home</a></li>
+        <li><a href="#Car Discovery.html">Car discovery</a></li>
+        <li><a href="#Forum.html">Forum</a></li>
+        <li><a href="#FAQ.html">FAQ</a></li>
+        <li><a href="#Imports.html">Imports</a></li>
+        <li><a href="#Profile.html">Profile</a></li>
+
+      </ul>
+<br><br/>
+<div class ="image">
+    <img src="jdmpic.webp" >
+</div>
+<div class="row">
+  <div class="column">
+    <h2 style="color:white;">Latest news</h2>
+    <ul2>
+      <li2 style="color:white;">Toyota cuts production again!</li2>
+      <br><br/>
+      <li2 style="color:white;">Uber to ban petrol cars by 2040.</li2>
+      <br><br/>
+      <li2 style="color:white;">2023 BMW M2 power output revealed.</li2>
+      <br><br/>
+    </ul2>
+    <br><br/>
+    <br><br/>
+    <br><br/>
+    <br><br/>
+    <h3 style="color:white;">Cars you follow</h3>
+    <ul3>
+      <li3 style="color:white;">Toyota Crown</li3>
+      <br><br/>
+      <li3 style="color:white;">Subaru Impreza</li3>
+      <br><br/>
+      <li3 style="color:white;">Mazda Miata</li3>
+      <br><br/>
+  </div>
+  
+  <div class="column">
+    <h2 style="color:white;">Upcoming Events</h2>
+    <ul2>
+      <li2 style="color:white;">Upcoming drift day in December</li2>
+      <br><br/>
+      <li2 style="color:white;">Car meet in October</li2>
+      <br><br/>
+      <li2 style="color:white;">New member celebration day early next year</li2>
+    </ul2>
+    <div class="slidecontainer">
+      <p style="color:white;">How excited are you for these events?</p>
+      <input type="range" min="1" max="100" value="50">
+    <br><br/>
+    <br><br/>
+    <br><br/>
+    <h3 style="color:white;">Question of the day</h3>
+    <b style="color:white;">Is lexus owned by toyota?</b>
+    <form action="/action_page.php">
+      <input style="color:white;"type="checkbox" id="True" name="True" value="True">
+      <label style="color:white;"for="True"> True</label><br>
+      <input style="color:white;"type="checkbox" id="False" name="False" value="False">
+      <label style="color:white;"for="False"> False</label><br>
+      <br><br>
+      <input tstyle="color:white;"type="submit" value="Submit">
+    </form>
+      <br><br/>
+  </div>
+</body>
+</html>

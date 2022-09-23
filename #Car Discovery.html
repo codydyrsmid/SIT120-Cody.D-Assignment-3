@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    </head>
+    <style>
+      /* Style used to change colour of the background of the application */
+      body {
+  background-color: black;
+  text-align: center;
+}
+/* This is used for the Navigation bar */
+li {
+    background-color: rgb(0, 0, 0);
+  }
+  /* Navigation bar */
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+}
+
+/* Navigation bar */
+li {
+  float: left;
+  text-align: center;
+}
+/* Navigation bar */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+    </style>
+    <body>
+      <ul>
+        <li><a class="active" href="#Homepage.html">Home</a></li>
+        <li><a href="#Car Discovery.html">Car discovery</a></li>
+        <li><a href="#Forum.html">Forum</a></li>
+        <li><a href="#FAQ.html">FAQ</a></li>
+        <li><a href="#Imports.html">Imports</a></li>
+        <li><a href="#Profile.html">Profile</a></li>
+
+      </ul>
+<br><br/>
+      <h style="color:white;">Car Discovery</h>
+        <div id="app">
+            <p style="color:white;">Make</p>
+            <input type="car" placeholder = "Please enter make of car" />
+            <p style="color:white;">Brand</p>
+            <input type="brand" placeholder = "Please enter brand of car" />
+            <p style="color:white;">Transmission</p>
+            <input type="brand" placeholder = "Please enter transmission of car" />
+            <p style="color:white;">Minimum Price</p>
+            <input type="brand" placeholder = "Please enter min price of car" />
+            <p style="color:white;">Maximum Price</p>
+            <input type="brand" placeholder = "Please enter Max price of car" />
+            <br></br>
+            <p style="color:white;">Body Type</p>
+            <select v-model="selected">
+            <option value="" disabled> please select body type</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Hatch">Hatch</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Convertible">Convertible</option>
+            <br></br>
+      <input tstyle="color:white;"type="submit" value="Submit">
+</select>
+          </select>
+
+        </div>
+        <div class ="image">
+          <img src="jdmpic2.webp" >
+      </div>
+    </body>
+</html>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            name: 'cody',
+        },
+    });
+</script>
